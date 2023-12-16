@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="832.0" prefWidth="430.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sistemakademikmahasiswa.MenuMahasiswaController">
+   <children>
+      <ImageView fitHeight="72.0" fitWidth="71.0" layoutX="27.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:///C:\image123\logo.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="98.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UNIVERSITAS KONOHA">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <ButtonBar layoutX="47.0" layoutY="211.0" prefHeight="40.0" prefWidth="200.0" />
+      <Line endX="329.0" layoutX="101.0" layoutY="169.0" startX="-100.0" />
+      <Accordion layoutX="105.0" layoutY="104.0" />
+      <ButtonBar layoutX="52.0" layoutY="229.0" prefHeight="40.0" prefWidth="200.0" />
+      <Hyperlink layoutX="309.0" layoutY="608.0" onAction="#ToPilihMK" text="Pilih Mata Kuliah" />
+      <Hyperlink layoutX="34.0" layoutY="608.0" onAction="#ToHalamanLogin" text="LOG OUT" />
+      <Button fx:id="informasimahasiswa" layoutX="121.0" layoutY="92.0" mnemonicParsing="false" onAction="#Menuinformasi" prefHeight="25.0" prefWidth="97.0" />
+      <Label fx:id="info" layoutX="133.0" layoutY="96.0" text="Label" />
+      <TableView fx:id="jadwalmhs" layoutX="15.0" layoutY="178.0" prefHeight="348.0" prefWidth="406.0">
+        <columns>
+          <TableColumn fx:id="MK" prefWidth="86.0" text="Mata Kuliah" />
+          <TableColumn fx:id="J" prefWidth="102.0" text="Jadwal" />
+            <TableColumn fx:id="S" minWidth="0.0" prefWidth="38.0" text="SKS" />
+            <TableColumn fx:id="D" prefWidth="93.0" text="Dosen" />
+            <TableColumn fx:id="R" prefWidth="86.0" text="Ruangan" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

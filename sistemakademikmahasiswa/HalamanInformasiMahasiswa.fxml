@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="832.0" prefWidth="430.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sistemakademikmahasiswa.HalamanInformasiMahasiswaController">
+   <children>
+      <Label fx:id="nama" layoutX="128.0" layoutY="215.0" text="Nama">
+         <font>
+            <Font name="Bell MT Bold" size="15.0" />
+         </font></Label>
+      <Label fx:id="npm" layoutX="131.0" layoutY="259.0" text="Npm">
+         <font>
+            <Font name="Bell MT Bold" size="15.0" />
+         </font></Label>
+      <Text layoutX="37.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nama">
+         <font>
+            <Font name="Bell MT Bold" size="15.0" />
+         </font></Text>
+      <Text layoutX="25.0" layoutY="309.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jenis Kelamin" textAlignment="CENTER" wrappingWidth="63.0">
+         <font>
+            <Font name="Bell MT Bold" size="15.0" />
+         </font></Text>
+      <Label fx:id="jk" layoutX="131.0" layoutY="304.0" text="JenisKlamin">
+         <font>
+            <Font name="Bell MT Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="r" layoutX="130.0" layoutY="363.0" text="Riwayat">
+         <font>
+            <Font name="Bell MT Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="prodi" layoutX="130.0" layoutY="430.0" text="prodi">
+         <font>
+            <Font name="Bell MT Bold" size="15.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="72.0" fitWidth="71.0" layoutX="37.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:///C:\image123\logo.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="108.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UNIVERSITAS KONOHA">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Line endX="329.0" layoutX="111.0" layoutY="179.0" startX="-111.0" />
+      <Accordion layoutX="115.0" layoutY="114.0" />
+      <Text layoutX="40.0" layoutY="273.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Npm">
+         <font>
+            <Font name="Bell MT Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="15.0" layoutY="368.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Riwayat Pendidikan" textAlignment="CENTER" wrappingWidth="81.0">
+         <font>
+            <Font name="Bell MT Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="21.0" layoutY="435.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Program Studi" textAlignment="CENTER" wrappingWidth="71.0">
+         <font>
+            <Font name="Bell MT Bold" size="15.0" />
+         </font>
+      </Text>
+      <Hyperlink fx:id="Kembali" layoutX="342.0" layoutY="503.0" onAction="#ToMenuMahasiswa" text="Kembali" />
+   </children>
+</AnchorPane>

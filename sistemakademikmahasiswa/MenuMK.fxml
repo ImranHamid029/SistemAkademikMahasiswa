@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="832.0" prefWidth="430.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="sistemakademikmahasiswa.MenuMKController">
+   <children>
+      <ImageView fitHeight="72.0" fitWidth="71.0" layoutX="47.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:///C:\image123\logo.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="118.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UNIVERSITAS KONOHA">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Line endX="329.0" layoutX="121.0" layoutY="189.0" startX="-127.0" />
+      <Accordion layoutX="125.0" layoutY="124.0" />
+      <TextField fx:id="m" layoutX="19.0" layoutY="511.0" prefHeight="25.0" prefWidth="208.0" />
+      <TextField fx:id="t" layoutX="236.0" layoutY="511.0" prefHeight="25.0" prefWidth="196.0" />
+      <Button layoutX="188.0" layoutY="676.0" mnemonicParsing="false" onAction="#addinformasi" text="Tambahkan" />
+      <TextField fx:id="i" layoutX="22.0" layoutY="611.0" prefHeight="41.0" prefWidth="202.0" />
+      <Text layoutX="106.0" layoutY="499.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Materi" />
+      <Text layoutX="318.0" layoutY="499.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tugas" />
+      <Text layoutX="89.0" layoutY="596.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informasi" />
+      <Hyperlink layoutX="381.0" layoutY="378.0" onAction="#toDosen" text="Kembali" />
+      <Text layoutX="47.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mata Kuliah" />
+      <Text layoutX="54.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Materi" />
+      <Text layoutX="55.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tugas" />
+      <Text layoutX="47.0" layoutY="359.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informasi" />
+      <Label fx:id="matkul" layoutX="160.0" layoutY="213.0" text="Label" />
+      <Label fx:id="materi" layoutX="160.0" layoutY="250.0" text="Label" />
+      <Label fx:id="Tugas" layoutX="160.0" layoutY="285.0" text="Label" />
+      <Label fx:id="informasi" layoutX="160.0" layoutY="346.0" text="Label" />
+      <Line endX="315.5" layoutX="135.0" layoutY="416.0" startX="-135.0" />
+      <TextField fx:id="idd" layoutX="242.0" layoutY="611.0" prefHeight="25.0" prefWidth="196.0" />
+      <Text layoutX="324.0" layoutY="604.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Id_Dosen" />
+   </children>
+</AnchorPane>
